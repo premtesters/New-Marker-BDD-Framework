@@ -84,17 +84,17 @@ public class BaseTest  {
 		return driver;
 	}
 	
-	@After(order = 1)
-	public void takeScraenshotOnFailure(Scenario scenario) {
-
-	if (scenario.isFailed()) {
-
-	TakesScreenshot ts = (TakesScreenshot) driver;
-
-	byte[] src = ts.getScreenshotAs(OutputType.BYTES);
-	scenario.attach(src, "image/png", "screenshot");
-	}
-
-	}
+//	@After(order = 1)
+//	public void takeScraenshotOnFailure(Scenario scenario) {
+//
+//	if (scenario.isFailed()) {
+//
+//	TakesScreenshot ts = (TakesScreenshot) driver;
+//
+//	byte[] src = ts.getScreenshotAs(OutputType.BYTES);
+//	scenario.attach(src, "image/png", "screenshot");
+//	}
+//
+//	}
 	
 }

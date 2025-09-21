@@ -13,7 +13,7 @@ features = {"src/test/resources/features/01LoginFeatures.feature",
 glue= "stepDefinitions",
 stepNotifications =true,
 
-plugin = {"pretty", "html: target/cucumber-reports","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 
 public class scriptRunner {
 
